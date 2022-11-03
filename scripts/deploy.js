@@ -1,5 +1,8 @@
-
-
+import HDWalletProvider from "@truffle-hdwallet-provider";
+newFunction();
+function newFunction() {
+  provider = new HDWalletProvider(mnemonic, "http://localhost:7545", 5, 1, true, "m/44'/137'/0'/0/");
+}
 
 async function main() {
   const Adinkra = await hre.ethers.getContractFactory("Adinkra");
